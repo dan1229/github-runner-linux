@@ -16,8 +16,8 @@ To run:
 
 
 Where:
-- <ORGANIZATION> is the organization you want to use this runner with
-- <ACCESS_TOKEN> is an access token with appropriate permissions you created
+- `<ORGANIZATION>` is the organization you want to use this runner with
+- `<ACCESS_TOKEN>` is an access token with appropriate permissions you created
 
 ### Repository
 To run:
@@ -27,6 +27,6 @@ To run:
 `docker run --detach --env GIT_USER=<GIT_USER> --env REPO_NAME=<REPO_NAME> --env REG_TOKEN=$REG_TOKEN --name <CONTAINER_NAME> runner-image`
 
 Where:
-- <REPO_NAME> is the repository name we want to use this runner for. This MUST match between the two commands above
-- <GIT_USER> is the git user you are using
-- <REG_TOKEN> is given in the repo settings when you try to set up a new self hosted runner
+- `<REPO_NAME>` is the repository name we want to use this runner for. This MUST match between the two commands above
+- `<GIT_USER>` is the git user you are using
+- `<REG_TOKEN>` is given in the repo settings when you try to set up a new self hosted runner
