@@ -10,7 +10,7 @@ The runners are currently split into two types - organization runners and repo r
 ### Organization
 To run:
 
-`docker build --tag runner-image`
+`docker build . --tag runner-image`
 
 `docker run --detach --env ORGANIZATION=<ORGANIZATION> --env ACCESS_TOKEN=<ACCESS_TOKEN> --name github-runner runner-image`
 
@@ -22,7 +22,7 @@ Where:
 ### Repository
 To run:
 
-`docker build --tag runner-image --build-arg REPO_NAME=<REPO_NAME>`
+`docker build . --tag runner-image --build-arg REPO_NAME=<REPO_NAME>`
 
 `docker run --detach --env GIT_USER=<GIT_USER> --env REPO_NAME=<REPO_NAME> --env REG_TOKEN=$REG_TOKEN --name <CONTAINER_NAME> runner-image`
 
