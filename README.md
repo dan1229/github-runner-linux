@@ -26,7 +26,7 @@ To run:
 ```
 cd repository
 docker build . --tag runner-image --build-arg REPO_NAME=<REPO_NAME>
-docker run --detach --env GIT_USER=<GIT_USER> --env REPO_NAME=<REPO_NAME> --env REG_TOKEN=$REG_TOKEN --name <CONTAINER_NAME> runner-image
+docker run --detach -v /var/run/docker.sock:/var/run/docker.sock --env GIT_USER=<GIT_USER> --env REPO_NAME=<REPO_NAME> --env REG_TOKEN=$REG_TOKEN --name <CONTAINER_NAME> runner-image
 ```
 
 Where:
