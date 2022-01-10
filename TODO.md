@@ -7,5 +7,5 @@ Setup self hosted runners for danielnazarian.com and dans backend
  
 
 
- Switch org dockerfile to dind
- - 20.10.12-dind-alpine3.15
+org container cant connect to /var/run/docker.sock
+- seems to be permissions issue but cant sort it out
