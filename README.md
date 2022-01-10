@@ -13,7 +13,11 @@ To run:
 ```
 cd organization
 docker build . --tag runner-image
-docker run --detach --env ORGANIZATION=<ORGANIZATION> --env ACCESS_TOKEN=<ACCESS_TOKEN> --name github-runner runner-image
+docker run --detach -v /var/run/docker.sock:/var/run/docker.sock \
+            --env ORGANIZATION=<ORGANIZATION> \
+            --env ACCESS_TOKEN=<ACCESS_TOKEN> \
+            --name github-org-runner \
+            runner-image
 ```
 
 Where:
